@@ -105,3 +105,49 @@ let strLength: number = (<string>someValue).length // any => string
 
 let asStrLength: number = (someValue as string).length 
 ```
+
+
+## 变量声明
+
+### var
+eg.
+
+``` typescript
+function fun(type) {
+  if(type) {
+    var x = 10
+  }
+  return x
+}
+
+console.log(fun(true)) // 10
+console.log(fun(false)) // undefined
+```
+
+### let
+
+同es6 let
+
+### const
+
+同es6 const
+
+### 解构
+
+#### 数组解构
+
+同es6
+
+#### 对象结构图
+
+同es6
+
+### 展开
+
+#### 数组展开
+
+同es6
+
+#### 对象展开
+
+同es6
