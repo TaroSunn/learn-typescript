@@ -151,3 +151,39 @@ console.log(fun(false)) // undefined
 #### 对象展开
 
 同es6
+
+## 接口
+
+使用`interface` 来定义
+
+```ts
+interface LabelledValue {
+  label: string
+}
+```
+
+### 可选属性
+
+使用关键字`?`来表示
+
+``` ts
+interface Test {
+  type?: string  // 可以有可无
+  value?: number
+}
+```
+
+### 只读属性
+
+使用关键词`readonly`来表示，只能读取数据 不能修改数据
+
+```ts
+interface Point {
+  readonly x: number
+  readonly y: number
+}
+let p1: Point = { x: 19, y: 29 }
+p1.x = 3 //   报错
+```
+
+`ReadOnlyArray`
